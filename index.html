@@ -1,0 +1,77 @@
+<!Doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="CSS/estilo.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="utf-8">
+  <meta name="description" content="Photography">
+  <meta name="keywords" content="HTML,CSS">
+  <meta name="author" content="Elder Lucas">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    .footer {
+        position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+    }
+</style>
+<title>Compra articulos</title>
+</head>
+
+<body>
+  <ul id= "barra">
+		<a href="index.html"><img src="images/Imagen1.png" alt="B&E"></a>
+		<a href="html/usuarioEdit.html"><i id="contactIcon" class="fa fa-user-circle"></i></a>
+			  </ul>
+				
+				<div class="slideshow">
+          <a href="html/animals.html"><img  class="mySlides transition" src="images/animalsban.jpg"></a>
+					<a href="html/sport.html"><img  class="mySlides transition" src="images/sportban.jpg"></a>
+					<a href="html/food.html"><img  class="mySlides transition" src="images/cocinaban.jpg"></a>
+					<a href="html/tecnologia.html"><img  class="mySlides transition" src="images/tecnologiaban.jpg"></a>
+					<a href="html/hogar.html"><img  class="mySlides transition" src="images/hogarban.jpg"></a>
+				</div>
+
+
+                <ul id= "barra2">
+					<li id="dos"><a href="html/animals.html">Animales</a></li>
+					<li id="dos"><a href="html/sport.html">Deporte</a></li>
+					<li id="dos"><a href="html/food.html">Cocina</a></li>
+					<li id="dos"><a href="html/tecnologia.html">Tecnología</a></li>
+					<li id="dos"><a href="html/hogar.html">Hogar</a></li>
+				</ul>
+
+
+        <div class="footer">
+          <a id="social" href="#" class="fa fa-facebook"></a>
+      <a id="social" href="#" class="fa fa-twitter"></a>
+      <a id="social" href="#" class="fa fa-google"></a>
+      <a id="social" href="#" class="fa fa-linkedin"></a>
+      <a id="social" href="#" class="fa fa-youtube"></a>
+      <a href="html/contactanos.html"><i id="contactanos" class="fa fa-envelope"></i></a>
+      <a href="html/info.html"><i id="info" class="fa fa-info"></i></a>
+        </div>
+
+        
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+			
+
+</body>
+</html>

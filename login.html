@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        
+        body{
+            background-color: orange;
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .imgcontainer{
+        text-align: center;
+    margin: 0px 0 0px 0;
+    position: relative;
+  }
+  
+  img.imagen {
+      margin: 60px;
+    width: 40%;
+    border-radius: 0%;
+  }
+
+  * {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #ec9d0865;
+}
+
+
+.loginButton{
+    background-color: rgb(255, 123, 0);
+    margin: 0% 40%;
+    display: block;
+    padding: 15px;
+    width: 20%;
+}
+
+.registerButton{
+    background-color: rgb(255, 123, 0);
+    margin: 1% 40%;
+    display: block;
+    padding: 15px;
+    width: 20%;
+
+}
+/* Set a style for all buttons */
+button {
+  color: white;
+  margin: 8px 0px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: rgba(255, 102, 0, 0.842);
+}
+
+.signupbtn{
+    padding: 14px 20px;
+  background-color: rgb(233, 136, 10);  
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+    text-align: center;
+  float: left;
+  width: 50%;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    transition: all 0.3s ease;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  top: 0;
+  width: 100%; /* Full width */
+ height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d88;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid orange;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+     </style>
+</head>
+<body>
+
+    <div class="imgcontainer">
+        <img src="images/bie.png" alt="bie" class="imagen">
+      </div>
+
+      <button  class="loginButton" onclick="document.getElementById('id01').style.display='block'">Iniciar Sesión</button>
+      <button  class="registerButton" onclick="document.getElementById('id02').style.display='block'">Registrarse</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Iniciar Sesión<nav></nav></h1>
+      <hr>
+      <label for="user"><b>Usuario</b></label>
+      <input type="text" placeholder="Enter User" name="user">
+
+      <label for="psw"><b>Contraseña</b></label>
+      <input type="password" placeholder="Enter Password" name="psw">
+
+      <div class="clearfix">
+        <a  href="" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</a>
+        <a href="index.html" class="signupbtn">Iniciar Sesión</a>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div id="id02" class="modal">
+    <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <form class="modal-content" action="/action_page.php">
+      <div class="container">
+        <h1>Registrarse<nav></nav></h1>
+        <hr>
+
+        <label for="user"><b>Nombre</b></label>
+        <input type="text" placeholder="Enter name" name="name">
+
+        <label for="user"><b>Usuario</b></label>
+        <input type="text" placeholder="Enter User" name="user">
+  
+        <label for="psw"><b>Contraseña</b></label>
+        <input type="password" placeholder="Enter Password" name="psw">
+
+        <label for="email"><b>correo electrónico</b></label>
+        <input type="text" placeholder="Enter email" name="email">
+
+        <label for="email"><b>Número de Teléfono</b></label>
+        <input type="text" placeholder="Enter phone number" name="phone">
+  
+        <div class="clearfix">
+          <a  href="" type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancelar</a>
+          <a type="button" onclick="document.getElementById('id02').style.display='none'" class="signupbtn">Registrarse</a>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+var modal = document.getElementById('id02');
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+    
+</body>
+
+</html>

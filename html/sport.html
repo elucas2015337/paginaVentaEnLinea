@@ -1,0 +1,152 @@
+<!Doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="../CSS/estilo.css">
+<link rel="stylesheet" href="../CSS/lightbox.min.css">
+<link rel="stylesheet" href="../CSS/listaProductos.css">
+<link rel="stylesheet" href="../CSS/botones.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script type="text/javascript" src="../js/lightbox-plus-jquery.min.js"></script>
+<meta charset="utf-8">
+  <meta name="description" content="Photography">
+  <meta name="keywords" content="HTML,CSS">
+  <meta name="author" content="Elder Lucas">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sport</title>
+</head>
+
+<body>
+	<ul id= "barra">
+		<a href="../index.html"><img src="../images/Imagen1.png" alt="B&E"></a>
+		<a href="usuarioEdit.html"><i id="contactIcon" class="fa fa-user-circle"></i></a>
+			  </ul>
+
+<div id="banner"><img src="../images/sportban.jpg" alt="Sport Photography" ></div>
+
+
+<ul id= "barra2">
+	<li id="dos"><a href="animals.html">Animales</a></li>
+	<li id="dos" class="active"><a href="sport.html">Deporte</a></li>
+	<li id="dos"><a href="food.html">Cocina</a></li>
+	<li id="dos"><a href="tecnologia.html">Tecnología</a></li>
+	<li id="dos"><a href="hogar.html">Hogar</a></li>
+</ul>
+				
+<a class="button button3" href="carrito.html"><i class="fa fa-shopping-cart"></i></a>
+
+<div class="row">
+	<div class="producto">
+	  <div class="content">
+		<img src="../images/sport/bate.jpg"   style="width:100%">
+		<a href="#"><i class="fa fa-shopping-cart"></i></a>
+		<h4>Bate de Béisbol</h4>
+		<p>Q300.00</p>
+		
+
+	  </div>
+	</div>
+	<div class="producto">
+		<div class="content">
+		  <img src="../images/sport/cofal.jpg"   style="width:100%">
+		  <a href="#"><i class="fa fa-shopping-cart"></i></a>
+		  <h4>Cofal fuerte</h4>
+		  <p>Q60.00</p>
+		</div>
+	  </div>
+	  <div class="producto">
+		<div class="content">
+		  <img src="../images/sport/gorroNatacion.jpg"   style="width:100%">
+		  <a href="#"><i class="fa fa-shopping-cart"></i></a>
+		  <h4>Gorro de Natación</h4>
+		  <p>Q85.00</p>
+		</div>
+	  </div>
+	  <div class="producto">
+		<div class="content">
+		  <img src="../images/sport/lentes.jpg"   style="width:100%">
+		  <a href="#"><i class="fa fa-shopping-cart"></i></a>
+		  <h4>Lentes de Natación</h4>
+		  <p>Q140.00</p>
+		</div>
+	  </div>
+	  <div class="producto">
+		<div class="content">
+		  <img src="../images/sport/pelotaBasket.png"   style="width:100%">
+		  <a href="#"><i class="fa fa-shopping-cart"></i></a>
+		  <h4>Pelota Basquet Ball</h4>
+		  <p>Q340.00</p>
+		</div>
+	  </div>
+	  <div class="producto">
+		<div class="content">
+		  <img src="../images/sport/pelotaTenis.png"   style="width:100%">
+		  <a href="#"><i class="fa fa-shopping-cart"></i></a>
+		  <h4>Pelota de Tenis</h4>
+		  <p>Q50.00</p>
+		</div>
+	  </div>
+	  <div class="producto">
+		<div class="content">
+		  <img src="../images/sport/raquetaTenis.jfif"   style="width:100%">
+		  <a href="#"><i class="fa fa-shopping-cart"></i></a>
+		  <h4>Raqueta de Tenis</h4>
+		  <p>Q240.00</p>
+		</div>
+	  </div>
+	  <div class="producto">
+		<div class="content">
+		  <img src="../images/sport/zapatoDeportivo.jpg"   style="width:100%">
+		  <a href="#"><i class="fa fa-shopping-cart"></i></a>
+		  <h4>Zapatos deportivos</h4>
+		  <p>Q500.00</p>
+		</div>
+	  </div>
+</div>
+
+<div class="footer">
+    <a id="social" href="#" class="fa fa-facebook"></a>
+<a id="social" href="#" class="fa fa-twitter"></a>
+<a id="social" href="#" class="fa fa-google"></a>
+<a id="social" href="#" class="fa fa-linkedin"></a>
+<a id="social" href="#" class="fa fa-youtube"></a>
+<a href="contactanos.html"><i id="contactanos" class="fa fa-envelope"></i></a>
+<a href="info.html"><i id="info" class="fa fa-info"></i></a>
+  </div>
+
+
+<script>
+	filterSelection("all")
+	function filterSelection(c) {
+	  var x, i;
+	  x = document.getElementsByClassName("producto");
+	  if (c == "all") c = "";
+	  for (i = 0; i < x.length; i++) {
+		w3RemoveClass(x[i], "show");
+		if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+	  }
+	}
+	
+	function w3AddClass(element, name) {
+	  var i, arr1, arr2;
+	  arr1 = element.className.split(" ");
+	  arr2 = name.split(" ");
+	  for (i = 0; i < arr2.length; i++) {
+		if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+	  }
+	}
+	
+	function w3RemoveClass(element, name) {
+	  var i, arr1, arr2;
+	  arr1 = element.className.split(" ");
+	  arr2 = name.split(" ");
+	  for (i = 0; i < arr2.length; i++) {
+		while (arr1.indexOf(arr2[i]) > -1) {
+		  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+		}
+	  }
+	  element.className = arr1.join(" ");
+	}
+	</script>
+</body>
+</html>

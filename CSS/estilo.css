@@ -1,0 +1,216 @@
+
+#banner img{
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  background-color: LightGray;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#barra{
+  list-style-type: none;
+  margin: 0;
+  background-color: white;
+  overflow: auto;
+  padding-left: 0%;
+  padding: 0;
+}
+
+#contactIcon{
+  float: right;
+  width: 7%;
+  padding: 0px 0px;
+  margin: 5px 15px;
+  color: orange;
+  text-align: right;
+  font-size: 35px;
+  border: 0;
+}
+
+#contactIcon:hover{
+  color: green;
+}
+
+
+#barra img{
+  width: 95px;
+  float: left;
+  padding-left: 0.4%;
+  margin: 4px 10px;
+}
+
+
+#barra2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: orange;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+#dos {
+  width: 20%;
+  float: left;
+}
+
+#dos a {
+  font-size: 90%;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#dos a:hover {
+  transition: all 0.3s ease;
+  color: green;
+  font-size: 100%;
+}
+
+.active {
+  background-color: green;
+  color: white;
+}
+
+/* Pie de la página */
+
+.footer {
+  padding: 10px; /* Some padding */
+  background: #ddd; /* Grey background */
+}
+
+.footer a{
+  font-size: 60%;
+}
+
+#social {
+  padding: 1%;
+  width: 3%;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+#social:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+
+
+#contactanos{
+  float: right;
+  width: 2%;
+  padding: 0px 0px;
+  margin: 0.4% 6% 0% 2%;
+  color: orange;
+  text-align: right;
+  font-size: 35px;
+  border: 0;
+}
+
+#contactanos:hover{
+color: green;
+}
+
+#info{
+  float: right;
+  width: 2%;
+  padding: 0px 0px;
+  margin: 0.5% 0% 0% 0%;
+  color: orange;
+  text-align: right;
+  font-size: 35px;
+  border: 0;
+}
+
+#info:hover{color: green;}
+
+/* Pie de la página */
+
+
+.mySlides {display:none;}
+
+.transition{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.transitionclass{}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+
+.slideshow img{
+	max-width: 100%;
+	transition: 0.5s;
+}
+
+.slideshow img:hover{
+	transform: scale(1.03);
+  }
+  
+  
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    background-color: green;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 16px;
+    color: white;
+  }
+  
+  tr:nth-child(even){
+    background-color: #fc2121;
+  }
+
+  #carrito{
+    font-size: 300%;
+    color: gray;
+    text-align: center;
+    margin: 7%;
+     
+  }
+
+  #error{
+    font-size: 600%;
+    color: gray;
+    margin: 43%;
+     
+  }
+
+  #error2{
+    font-size: 300%;
+    color: gray;
+    margin: 25%;
+     
+  }
